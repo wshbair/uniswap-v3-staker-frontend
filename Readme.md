@@ -10,8 +10,6 @@ A frontend to be used to perform liquidity mining incentives via the [Uniswap V3
 
 ## Getting started
 
-#### Configuration
-
 ### Run
 
 - Copy `.env.local.sample` to `.env.local` and configure.
