@@ -59,7 +59,7 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
     if (!network) return;
 
     const load = async () => {
-      const subgraph = request.subgraph(SUBGRAPHS[network])!;
+      const subgraph = request.subgraph(SUBGRAPHS[network]);
       const { incentives } = await subgraph(
         `query {
           incentives(orderBy: endTime, orderDirection: desc) {
@@ -116,7 +116,7 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
     load();
   }, [network]);
 
-  // load owned and transfered positions
+  // load owned and transferee positions
   useEffect(() => {
     if (
       !(

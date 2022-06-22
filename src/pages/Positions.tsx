@@ -61,7 +61,7 @@ const Stake: FC<{ history: any }> = ({ history }) => {
           <>
             <Box>
               <Typography variant='h5'>
-                You are about to earn rewards by staking Witnet tokens on
+                You are about to earn rewards by staking VNXLU tokens on
                 Ethereum!
               </Typography>
             </Box>
